@@ -14,42 +14,56 @@
   <div class="app">
     <!-- Nav section -->
     <div class="nav">
-      <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+      <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
       <div class="navButtons">
-        <div class"home">
-          <i class="fa fa-home" aria-hidden="true"></i>
-          <a href="#">Home</a>
+        <div class="nav-icons">
+          <div class"home" id="icon-div">
+            <i class="fa fa-home fa-lg" aria-hidden="true"></i>
+          </div>
+          <a href="#" class="nav-links">Home</a>
         </div>
-        <div class="explore">
-          <i class="fa fa-hashtag" aria-hidden="true"></i>
-          <a href="#">Explore</a>
+        <div class="nav-icons">
+          <div class="explore" id="icon-div">
+            <i class="fa fa-hashtag fa-lg" aria-hidden="true"></i>
+          </div>
+          <a href="#" class="nav-links">Explore</a>
         </div>
-        <div class="notifications">
-          <i class="fa fa-bell-o" aria-hidden="true"></i>
-          <a href="#">Notification</a>
+        <div class="nav-icons">
+          <div class="notifications" id="icon-div">
+            <i class="fa fa-bell-o fa-lg" aria-hidden="true"></i>
+          </div>
+          <a href="#" class="nav-links">Notification</a>
         </div>
-        <div class="messages">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          <a href="#">Messages</a>
+        <div class="nav-icons">
+          <div class="messages" id="icon-div">
+            <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+          </div>
+          <a href="#" class="nav-links">Messages</a>
         </div>
-        <div class="bookmarks">
-          <i class="fa fa-bookmark-o" aria-hidden="true"></i>
-          <a href="#">Bookmarks</a>
+        <div class="nav-icons">
+          <div class="bookmarks" id="icon-div">
+            <i class="fa fa-bookmark-o fa-lg" aria-hidden="true"></i>
+          </div>
+          <a href="#" class="nav-links">Bookmarks</a>
         </div>
-        <div class="lists">
-          <i class="fa fa-th-list" aria-hidden="true"></i>
-          <a href="#">Lists</a>
+        <div class="nav-icons">
+          <div class="lists" id="icon-div">
+            <i class="fa fa-th-list fa-lg" aria-hidden="true"></i>
+          </div>
+          <a href="#" class="nav-links">Lists</a>
         </div>
-        <div class="profile">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <a href="#">Profile</a>
+        <div class="nav-icons">
+          <div class="profile" id="icon-div">
+            <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+          </div>
+          <a href="#" class="nav-links">Profile</a>
         </div>
       </div>
-      <button class="tweetbtn">tweet</button>
+      <button class="tweetbtn">Tweet</button>
     </div>
     <!-- Main section -->
     <div class="main">
-      <h1>Home</h1>
+      <h1 class="home">Home</h1>
       <div class="mytweet">
         <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
         <input type="text" placeholder="Whats happening?" class="mytweetbox">
@@ -64,14 +78,107 @@
         </div>
         <div class="tweet-options">
           <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+          |
           <i class="fa fa-plus-circle" aria-hidden="true"></i>
           <button class="main-tweet">Tweet</button>
         </div>
       </div>
       <div class="posts">
-        <div class="item1">Tweet #1</div>
-        <div class="item2">Tweet #2</div>
-        <div class="item3">Tweet #3</div>
+        <div class="user-tweet-box">
+          <div class="user-icon">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </div>
+          <div class="user-tweet">
+            <div class="twitter-user-info">
+              <p><b>display name </b><a href="#">@twitterusername</a>• 20m</p>
+              <p>Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio
+                urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit
+                ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nu</p>
+              <div class="user-tweet-options-icons">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <i class="fa fa-retweet" aria-hidden="true"></i>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-share-square-o" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="user-tweet-box">
+          <div class="user-icon">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </div>
+          <div class="user-tweet">
+            <div class="twitter-user-info">
+              <p><b>display name </b><a href="#">@twitterusername</a>• 22m</p>
+              <p>Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio
+                urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit
+                ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nu</p>
+              <div class="user-tweet-options-icons">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <i class="fa fa-retweet" aria-hidden="true"></i>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-share-square-o" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="user-tweet-box">
+          <div class="user-icon">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </div>
+          <div class="user-tweet">
+            <div class="twitter-user-info">
+              <p><b>display name </b><a href="#">@twitterusername</a>• 24m</p>
+              <p>Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio
+                urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit
+                ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nu</p>
+              <div class="user-tweet-options-icons">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <i class="fa fa-retweet" aria-hidden="true"></i>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-share-square-o" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="user-tweet-box">
+          <div class="user-icon">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </div>
+          <div class="user-tweet">
+            <div class="twitter-user-info">
+              <p><b>display name </b><a href="#">@twitterusername</a>• 26m</p>
+              <p>Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio
+                urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit
+                ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nu</p>
+              <div class="user-tweet-options-icons">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <i class="fa fa-retweet" aria-hidden="true"></i>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-share-square-o" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="user-tweet-box">
+          <div class="user-icon">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </div>
+          <div class="user-tweet">
+            <div class="twitter-user-info">
+              <p><b>display name </b><a href="#">@twitterusername</a>• 28m</p>
+              <p>Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio
+                urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit
+                ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nu</p>
+              <div class="user-tweet-options-icons">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <i class="fa fa-retweet" aria-hidden="true"></i>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-share-square-o" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Right section -->
