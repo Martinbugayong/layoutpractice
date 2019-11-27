@@ -14,13 +14,13 @@
   <div class="app">
     <!-- Nav section -->
     <div class="nav">
-      <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
       <div class="navButtons">
         <div class="nav-icons">
           <div class"home" id="icon-div">
             <i class="fa fa-home fa-lg" aria-hidden="true"></i>
           </div>
-          <a href="#" class="nav-links">Home</a>
+          <a href="#" class="nav-links" id="homenav">Home</a>
         </div>
         <div class="nav-icons">
           <div class="explore" id="icon-div">
@@ -63,7 +63,14 @@
     </div>
     <!-- Main section -->
     <div class="main">
-      <h1 class="home">Home</h1>
+      <div class="main-home">
+        <div class="home-container">
+          <h1 class="home">Home</h1>
+        </div>
+        <div class="star-container">
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
       <div class="mytweet">
         <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
         <input type="text" placeholder="Whats happening?" class="mytweetbox">
@@ -77,10 +84,12 @@
           <i class="fa fa-calendar-plus-o fa-lg" aria-hidden="true"></i>
         </div>
         <div class="tweet-options">
-          <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
-          |
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-          <button class="main-tweet">Tweet</button>
+          <div class="circle-plus-icons">
+            <i class="fa fa-circle-o-notch fa-lg" aria-hidden="true"></i>
+            |
+            <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+            <button class="main-tweet">Tweet</button>
+          </div>
         </div>
       </div>
       <div class="posts">
@@ -90,10 +99,19 @@
           </div>
           <div class="user-tweet">
             <div class="twitter-user-info">
-              <p><b>display name </b><a href="#">@twitterusername</a>• 20m</p>
-              <p>Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio
-                urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit
-                ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nu</p>
+              <div class="user-tweet-header">
+                <div class="twitter-display-name">
+                  <p><b>display name </b><a href="#" class="twitter-handle">@twitterusername • 20m</a></p>
+                </div>
+                <div class="down-arrow">
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="user-tweet-displayed">
+                <p>Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio
+                  urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit
+                  ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nu</p>
+              </div>
               <div class="user-tweet-options-icons">
                 <i class="fa fa-comment-o" aria-hidden="true"></i>
                 <i class="fa fa-retweet" aria-hidden="true"></i>
